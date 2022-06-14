@@ -1,0 +1,256 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+	font-size: 22px;
+	font-weight: 100;
+	line-height: 1.7em;
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+.cool_background{
+	color: #111;
+	background-image: -webkit-linear-gradient( hsl(200, 41%, 61%), hsl(322, 20%, 71%) );
+	background-image: -moz-linear-gradient( hsl(200, 41%, 61%), hsl(322, 20%, 71%) );
+	background-image: -o-linear-gradient( hsl(200, 41%, 61%), hsl(322, 20%, 71%) );
+	background-image: linear-gradient( hsl(200, 41%, 61%), hsl(322, 20%, 71%) );
+}
+.dark_background{
+	background: hsl(200, 15%, 12%);
+	color: #eee;
+}
+a{
+	color: hsl(322, 84%, 70%);
+}
+a:hover{
+	color: hsl(322, 84%, 80%);
+}
+
+#splash{
+	width: 100%;
+	height: 540px;
+	position: relative;
+	overflow: hidden;
+}
+#splash_container{
+	position: relative;
+	width: 960px;
+	height: 500px;
+	margin: 0 auto;
+}
+#splash_image{
+	position: absolute;
+	background: url(splash.png);
+	width: 960px;
+	height: 550px;
+	background-size: 100% auto;
+}
+#splash_video{
+	width: 480px;
+	height: 240px;
+	background: #fff;
+    position: absolute;
+    top: 220px;
+    left: 154px;
+}
+#splash_arrow{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+#splash_arrow div{
+	position: absolute;
+}
+#splash_arrow div:nth-child(1), #splash_arrow div:nth-child(4){
+	width: 50%;
+	height: 40px;
+	background: hsl(200, 15%, 12%);
+}
+#splash_arrow div:nth-child(1){
+	left:-40px;
+}
+#splash_arrow div:nth-child(4){
+	right:-40px;
+}
+#splash_arrow div:nth-child(2){
+	left: calc(50% - 40px);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 0 0 40px;
+	border-color: transparent transparent transparent hsl(200, 15%, 12%);
+}
+#splash_arrow div:nth-child(3){
+	right: calc(50% - 40px);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 40px 40px;
+	border-color: transparent transparent hsl(200, 15%, 12%) transparent;
+}
+/*
+#splash_arrow div{
+	margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid hsl(322, 20%, 71%);
+}
+*/
+
+#description{
+	width: 100%;
+	overflow: hidden;
+}
+#description_prologue{
+	width: 720px;
+	margin: 20px auto 50px auto;
+	overflow: hidden;
+}
+#description_content{
+	width: 960px;
+	margin: 30px auto 20px auto;
+	overflow: hidden;
+}
+#description_content > div{
+	float: left;
+	width: 460px;
+	height: 260px;
+	margin-bottom: 20px;
+}
+#description_content > div:nth-child(2n){
+	margin-left: 40px;
+}
+.desc_mov{
+	/*background: rgba(255,255,255,0.2);*/
+}
+.desc_info {
+	font-size: 0.85em;
+	line-height: 1.7em;
+}
+.desc_info b{
+	display: block;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 0.4em;
+}
+
+#examples{	
+	overflow: hidden;
+}
+#examples_title{
+	font-size: 1.08em;
+	width: 800px;
+	margin: 50px auto 30px auto;
+}
+#examples_blocks{
+	width: 800px;
+	height: 250px;
+	margin: 0 auto;
+}
+#examples_blocks div{
+	width: 250px;
+	height: 245px;
+	float: left;
+}
+.example_button{
+
+	border-radius: 25px;
+	border-bottom: 5px solid rgba(0,0,0,0.2); 
+	position: relative;
+	top:0;
+	transition: top 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+
+}
+.example_button:hover{
+	top:-10px;
+	box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.25);
+}
+#examples_blocks div#demo_turtle_thumb{
+	background: url(demo_turtle.png);
+}
+#examples_blocks div#demo_music_thumb{
+	background: url(demo_music.png);
+}
+#examples_blocks div#demo_nonlinear_thumb{
+	background: url(demo_nonlinear.png);
+}
+#examples_blocks div span{
+	display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+    line-height: 1em;
+    width: 250px;
+    left: 0;
+    top: 97px;
+    position: relative;
+}
+#examples_blocks a:nth-child(n+2) > div{
+	margin-left: 25px;
+}
+#examples_getting_started{
+	width: 640px;
+	margin: 30px auto 50px auto;
+	font-size: 1em;
+}
+#examples_getting_started div{
+    width: 500px;
+    height: 60px;
+    background: hsl(322, 84%, 70%);
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 0.5em auto 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#credits{
+	overflow: hidden;
+}
+#credits_content{
+	width: 640px;
+	margin: 50px auto;
+}
+
+#social{
+	background:#111;
+	padding: 30px 0;
+	color: #888;
+	text-align: center;
+}
+
+ul.share-buttons{
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+ul.share-buttons li{
+	display: inline;
+	transition: opacity 0.2s ease-in-out;
+	opacity: 0.7;
+}
+ul.share-buttons li:hover{
+	opacity: 1.0;
+}
+ul.share-buttons li img{
+	width: 20px;
+}
